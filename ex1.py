@@ -21,8 +21,8 @@ def largest_product(list_nums):
 def run():
     lenght_list = int(input("What's the list's lenght you want to generate?: "))
     given = [random.randint(-1000, 1000) for i in range(lenght_list)]
-    # this is another way to handle the lenght constraint
-    # assert lenght_list >= 2 and lenght_list <= 10, "You just can enter a list larger than lenght 2 or smaller than lenght 10"
+    """this is another way to handle the lenght constraint
+    # assert lenght_list >= 2 and lenght_list <= 10, "You just can enter a list larger than lenght 2 or smaller than lenght 10" """
     print(f"Random array: {given}")
     prod = largest_product(given)
     print(f'The largest product in the array is: {prod}')
